@@ -1,0 +1,33 @@
+img {
+  display: block;
+  height: 50px;
+}
+
+.logo {
+  margin: 0px 0;
+  padding: 0;
+  height: 50px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  justify-content: center;
+  gap: 30px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.logo2 img {
+  height: 25px;
+}
+
+.logo2 {
+  margin: 16px 0;
+}

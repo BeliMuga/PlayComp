@@ -1,0 +1,12 @@
+.Action {
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.lpAnimation {
+  height: auto;
+  width: auto;
+  background-color: #d9ed6a;
+}

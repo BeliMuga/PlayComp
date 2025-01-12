@@ -1,0 +1,8 @@
+.Contact {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  padding: 40px;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,42 +1,31 @@
 #root {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.App {
+  position: relative;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.svg-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Or desired dimensions */
+  overflow: hidden; /* Optional: prevents overflowing SVG */
+  border: 2px solid blue; /* Debugging */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.background-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Viewport width */
+  height: 100vh;
+  opacity: 0.1; /* Adjust visibility */
+  z-index: -1; /* Place behind content */
+  border: 2px solid red; /* Debugging */
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.content {
+  position: relative;
+  z-index: 5;
 }

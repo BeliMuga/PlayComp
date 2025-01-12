@@ -1,0 +1,17 @@
+.Product {
+  margin: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.productImg {
+  height: auto;
+  width: auto;
+  background-color: #d9ed6a;
+  grid-row: 1 / span 3;
+}
+
+h2 {
+  margin: 0px;
+}

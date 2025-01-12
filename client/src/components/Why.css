@@ -1,0 +1,22 @@
+.Why {
+  margin: 20px 0;
+}
+
+.whyItems {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.unis {
+  background-color: #67939c;
+}
+
+.incub {
+  background-color: #e97e37;
+}
+
+.more {
+  grid-column: 1 / span 2;
+  height: 170px;
+  background-color: #94b959;
+}
