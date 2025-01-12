@@ -1,5 +1,5 @@
 import React from "react";
-import "./Value.css";
+import "../styles/components/Value.css";
 
 function Value() {
   return (

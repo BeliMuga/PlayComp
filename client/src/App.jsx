@@ -8,9 +8,9 @@ import Resources from "./pages/Resources.jsx";
 import About from "./pages/About.jsx";
 import Faqs from "./pages/Faqs.jsx";
 import Error404 from "./pages/Error404.jsx";
-import Navbar from "./components/Navbar.jsx";
-import Footer from "./components/Footer.jsx";
-import Header from "./components/Header.jsx";
+import Navbar from "./layout/Navbar.jsx";
+import Footer from "./layout/Footer.jsx";
+import Header from "./layout/Header.jsx";
 import CicuitBoard from "./assets/CicuitBoard.jsx";
 
 function App() {

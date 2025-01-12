@@ -7,11 +7,12 @@
 }
 
 .svg-container {
-  position: relative;
+  position: absolute; /* Establish positioning context */
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 100vh; /* Or desired dimensions */
-  overflow: hidden; /* Optional: prevents overflowing SVG */
-  border: 2px solid blue; /* Debugging */
+  height: 100%;
+  z-index: -1;
 }
 
 .background-svg {
@@ -21,7 +22,7 @@
   width: 100vw; /* Viewport width */
   height: 100vh;
   opacity: 0.1; /* Adjust visibility */
-  z-index: -1; /* Place behind content */
+  /* Place behind content */
   border: 2px solid red; /* Debugging */
 }
 

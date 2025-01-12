@@ -1,5 +1,5 @@
 import React from "react";
-import "./Why.css";
+import "../styles/components/Why.css";
 function Why() {
   return (
     <div className="Why">
