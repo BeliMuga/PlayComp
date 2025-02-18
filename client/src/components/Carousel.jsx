@@ -5,7 +5,7 @@ function Carousel() {
   return (
     <div className="Carousel">
       <div className="items">
-        <div className="ideas">
+        {/* <div className="ideas">
           <div>
             {" "}
             <p>Spotting Opportunities </p>
@@ -27,22 +27,18 @@ function Carousel() {
               Ethical and sustainable thinking{" "}
             </p>
           </div>
-        </div>
+        </div> */}
         <div className="resources">
           <div>
-            {" "}
             <p>Self-insight and self-efficacy </p>
           </div>
           <div>
-            {" "}
             <p>Mobilising resources </p>
           </div>
           <div>
-            {" "}
             <p>Motivation and perseverance </p>
           </div>
           <div>
-            {" "}
             <p>
               Financial and economic literacy{" "}
             </p>
@@ -52,7 +48,7 @@ function Carousel() {
             <p>Mobilising others </p>
           </div>
         </div>
-        <div className="action">
+        {/* <div className="action">
           <div>
             {" "}
             <p>Taking the initiative</p>
@@ -75,7 +71,7 @@ function Carousel() {
             {" "}
             <p>Learning through experience</p>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

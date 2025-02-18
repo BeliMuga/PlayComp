@@ -1,0 +1,18 @@
+.Resource,
+.resourceImg {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.AI,
+.Res {
+  width: 50vw;
+}
+
+.imgAi,
+.resourceImg {
+  background-color: #94b959;
+  height: 30vh;
+}

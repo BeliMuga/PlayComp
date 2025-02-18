@@ -1,18 +1,24 @@
+.Value {
+  width: 100vw;
+}
+
 .valueLeft {
   display: flex;
   flex-direction: row;
+
   margin: 5px;
   gap: 15px;
 }
 
 .valueRight {
   display: flex;
+
   margin: 5px;
   flex-direction: row-reverse;
   gap: 15px;
 }
 
 .valueImg {
-  width: 100px;
+  width: 100vw;
   background-color: #d9ed6a;
 }

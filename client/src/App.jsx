@@ -1,7 +1,6 @@
 import "./App.css";
 import React from "react";
 import { Routes, Route } from "react-router";
-import { motion } from "motion/react";
 
 import Home from "./pages/Home.jsx";
 import Resources from "./pages/Resources.jsx";
@@ -12,15 +11,16 @@ import Navbar from "./layout/Navbar.jsx";
 import Footer from "./layout/Footer.jsx";
 import Header from "./layout/Header.jsx";
 import CicuitBoard from "./assets/CicuitBoard.jsx";
+import Main3D from "./assets/Main3D.jsx";
 
 function App() {
   return (
     <div className="App">
-      <div className="svg-container">
-        <CicuitBoard className="background-svg" />
-      </div>
+      <CicuitBoard />
+      {/* <Main3D /> */}
+
       <div className="content">
-        <Header></Header>
+        {/* <Header></Header> */}
         <Navbar></Navbar>
         <Routes>
           <Route path="/" element={<Home />} />

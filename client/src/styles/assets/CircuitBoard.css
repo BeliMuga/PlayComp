@@ -1,0 +1,13 @@
+.circuitBoardsvg {
+  position: fixed;
+  top: 50%; /* Center it vertically */
+  left: 50%; /* Center it horizontally */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Perfectly center the SVG */
+
+  height: 150%; /* Scale the SVG proportionally */
+  width: auto; /* Keep aspect ratio */
+  z-index: -1;
+}
