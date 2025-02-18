@@ -1,0 +1,15 @@
+.ProfileComp {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+.ProfileComp h2 {
+  grid-column: 1 / span 2;
+  text-align: center;
+}
+
+.profileCompImg {
+  background-color: #94b959;
+  height: 30vh;
+}

@@ -1,17 +1,26 @@
 .Carousel {
+  width: 100vw;
   margin: 20px 0;
   height: 100px;
   background-color: #5e0a7a;
 }
 
-.ideas,
+/* .ideas,
 .resources,
 .action {
   display: flex;
   flex-direction: row;
   gap: 25px;
-}
+} */
 
+.resources div {
+  background-color: #e97e37;
+  padding: 5px 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px #491f04;
+  border: 1.5px solid #c0f3fda9;
+  text-align: center;
+}
 .items {
   display: flex;
   gap: 0 25px;
@@ -23,12 +32,17 @@
   width: 200px;
 }
 
-.resources div {
-  background-color: #e97e37;
-  width: 200px;
+.resources {
+  display: flex;
+  column-gap: 20px;
+  /* background-color: #e97e37; */
+  /* width: 200px; */
 }
 
 .action div {
   background-color: #94b959;
   width: 200px;
+}
+
+p {
 }

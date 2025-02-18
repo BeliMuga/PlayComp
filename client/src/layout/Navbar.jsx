@@ -1,12 +1,12 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import "./Navbar.css";
+import "../styles/layout/Navbar.css";
 import Logo from "/PlaycompLogo_Color.png";
 import Linkedin from "/LinkedinLogo.png";
 
 function Navbar() {
   return (
-    <div className="Navbar">
+    <header className="Navbar">
       <nav>
         <Link to="/" className="logo">
           <img src={Logo} alt="logo" />
@@ -51,7 +51,7 @@ function Navbar() {
           <img src={Linkedin} alt="logo" />
         </a>
       </nav>
-    </div>
+    </header>
   );
 }
 
