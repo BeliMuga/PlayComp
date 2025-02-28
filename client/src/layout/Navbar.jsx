@@ -14,7 +14,7 @@ function Navbar() {
         <ul>
           <li>
             <NavLink to="/" className="home">
-              HOME
+              <h2>HOME</h2>
             </NavLink>
           </li>
           <li>
@@ -22,7 +22,7 @@ function Navbar() {
               to="/about"
               className="about"
             >
-              ABOUT US
+              <h2>ABOUT</h2>
             </NavLink>
           </li>
           <li>
@@ -30,13 +30,13 @@ function Navbar() {
               to="/resources"
               className="resources"
             >
-              RESOURCES
+              <h2>RESOURCES</h2>
             </NavLink>
           </li>
 
           <li>
             <NavLink to="/faqs" className="faqs">
-              FAQS
+              <h2>FAQS</h2>
             </NavLink>
           </li>
         </ul>

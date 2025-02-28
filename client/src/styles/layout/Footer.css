@@ -1,5 +1,61 @@
 .Footer {
   width: 100vw;
-  height: 60px;
+  height: auto;
   background-color: #d9ed6a;
+  display: grid; /* ✅ Switch to grid for better layout control */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(120px, 1fr)
+  ); /* ✅ Makes it responsive */
+  justify-content: center;
+  align-items: center;
+  padding: 15px 5vw; /* ✅ Ensures spacing on all screens */
+  gap: 20px;
+  box-sizing: border-box; /* ✅ Prevents overflow */
+}
+
+/* ✅ Each logo + text */
+.footer-item {
+  display: flex;
+  flex-direction: column-reverse; /* ✅ Keeps text below logo */
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+  max-width: 150px; /* ✅ Prevents stretching */
+}
+
+/* ✅ Circular logo styling */
+.footer-item img {
+  width: 60px; /* ✅ Adjusts properly */
+  height: 60px;
+  border-radius: 50%;
+  object-fit: contain;
+  background-color: #57415e;
+  padding: 5px;
+}
+
+/* ✅ Text below logo */
+.footer-item p {
+  margin: 0;
+  max-width: 100%; /* ✅ Prevents weird stretching */
+}
+
+/* 📱 **Responsive Fix for Smaller Screens** */
+@media (max-width: 768px) {
+  .Footer {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* ✅ Keeps items in two columns */
+    gap: 15px;
+  }
+
+  .footer-item {
+    max-width: 120px;
+  }
+
+  .footer-item img {
+    width: 50px; /* ✅ Slightly smaller on mobile */
+    height: 50px;
+  }
 }

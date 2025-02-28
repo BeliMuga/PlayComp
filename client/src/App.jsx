@@ -9,18 +9,16 @@ import Faqs from "./pages/Faqs.jsx";
 import Error404 from "./pages/Error404.jsx";
 import Navbar from "./layout/Navbar.jsx";
 import Footer from "./layout/Footer.jsx";
-import Header from "./layout/Header.jsx";
-import CicuitBoard from "./assets/CicuitBoard.jsx";
+import CircuitBoard from "./assets/CircuitBoard.jsx";
 import Main3D from "./assets/Main3D.jsx";
 
 function App() {
   return (
     <div className="App">
-      <CicuitBoard />
+      <CircuitBoard />
       {/* <Main3D /> */}
 
       <div className="content">
-        {/* <Header></Header> */}
         <Navbar></Navbar>
         <Routes>
           <Route path="/" element={<Home />} />
