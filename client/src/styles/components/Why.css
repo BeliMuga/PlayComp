@@ -1,22 +1,99 @@
 .Why {
   width: 100vw;
-  margin: 20px 0;
+  overflow-x: hidden; /* ✅ Prevents horizontal scroll */
+  padding: 20px 0;
+  box-sizing: border-box;
 }
 
+/* ✅ Define the triad layout */
 .whyItems {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(
+    2,
+    minmax(0, 1fr)
+  ); /* ✅ Two equal columns */
+  grid-template-rows: auto auto; /* ✅ Ensures proper spacing */
+  grid-template-areas:
+    "unis incub"
+    "more more"; /* ✅ Bottom section spans both columns */
+  width: 100%; /* ✅ Ensures full width */
 }
 
+/* ✅ Assign areas */
 .unis {
+  grid-area: unis;
   background-color: #67939c;
 }
 
 .incub {
+  grid-area: incub;
   background-color: #e97e37;
 }
 
 .more {
-  grid-column: 1 / span 2;
+  grid-area: more;
   background-color: #94b959;
+}
+
+/* ✅ Shared styles */
+.unis,
+.incub,
+.more {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5vh 4vw; /* ✅ Responsive padding */
+  box-sizing: border-box; /* ✅ Prevents layout break */
+}
+
+/* 📱 **Fix for Smaller Screens Without Changing Layout** */
+@media (max-width: 1024px) {
+  .whyItems {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* ✅ Keeps 2 columns */
+  }
+
+  .unis,
+  .incub,
+  .more {
+    padding: 4vh 3vw; /* ✅ Reduce padding */
+  }
+}
+
+@media (max-width: 768px) {
+  .whyItems {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* ✅ Maintain layout */
+  }
+
+  .unis,
+  .incub,
+  .more {
+    padding: 3vh 2vw; /* ✅ Further reduce padding */
+  }
+}
+
+@media (max-width: 360px) {
+  .whyItems {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* ✅ Maintain layout */
+  }
+
+  .whyItems h2 {
+    font-size: 1.1em;
+  }
+
+  .unis,
+  .incub,
+  .more {
+    padding: 2vh 1vw; /* ✅ Further reduce padding */
+  }
 }

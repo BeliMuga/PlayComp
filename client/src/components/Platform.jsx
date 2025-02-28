@@ -1,16 +1,23 @@
 import React from "react";
 
+import AnimatedText from "./AnimatedText";
+import "../styles/components/AnimatedText.css";
+import "../styles/components/Platform.css";
+
 function Platform() {
   return (
     <div className="Platform">
-      <h2>PLATAFORMA PLAYCOMP</h2>
-      <div className="platformImg"></div>
-      <p>
-        La primera plataforma de videojuegos que
+      <AnimatedText
+        el="h2"
+        text={[
+          `La primera plataforma de videojuegos que
         evalúa y desarrolla las competencias
-        emprendedoras necesarias para el mundo
-        laboral basadas en el marco EntreComp.
-      </p>
+        emprendedoras laborales basadas en el marco EntreComp.`,
+        ]}
+        className="animated-text"
+        repeatDelay={5000}
+      />
+      <p></p>
     </div>
   );
 }

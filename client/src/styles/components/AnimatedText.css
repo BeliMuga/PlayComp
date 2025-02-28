@@ -1,0 +1,42 @@
+.main-container {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+/* Centers Content */
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 56px;
+}
+
+/* Full-Screen Sections */
+
+/* Text Styling */
+.large-text {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.animated-text {
+  font-size: 2em;
+  text-align: center;
+}
+
+.animated-subtext {
+  font-size: 34px;
+  text-align: center;
+}
+
+/* Visually Hidden (for screen readers) */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

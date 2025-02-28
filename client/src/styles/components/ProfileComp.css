@@ -1,15 +1,65 @@
 .ProfileComp {
+  width: 100vw;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5px;
+  grid-template-columns: 1fr 1fr; /* ✅ Two equal columns */
+  align-items: center;
+  justify-items: center;
+  gap: 20px;
+  padding: 50px 5vw; /* ✅ Responsive padding */
+  box-sizing: border-box;
 }
 
-.ProfileComp h2 {
-  grid-column: 1 / span 2;
+/* ✅ Styling for text container */
+.profileText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  border: 0.5px solid #daeb7e91;
+  border-radius: 10px;
+
+  backdrop-filter: blur(35px);
+  -webkit-backdrop-filter: blur(35px);
+  box-shadow: 5px 6px 8px 5px #29252c;
+  padding: 5px 10px;
+  margin: 0px 10px;
 }
 
-.profileCompImg {
-  background-color: #94b959;
-  height: 30vh;
+.profileText h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.profileText p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* ✅ Image styles */
+.ProfileComp img {
+  width: 40vw; /* ✅ Ensures image scales properly */
+  height: auto;
+  box-shadow: 5px 6px 8px 5px #1d1720;
+  border-radius: 10px;
+}
+
+/* 📱 **Responsive Fix for Smaller Screens** */
+@media (max-width: 768px) {
+  .ProfileComp {
+    grid-template-columns: 1fr; /* ✅ Single column */
+    grid-template-rows: auto auto;
+  }
+
+  .profileText {
+    grid-row: 2; /* ✅ Moves text below */
+    padding: 20px; /* ✅ Reduce padding for smaller screens */
+    text-align: center; /* ✅ Center text on mobile */
+    align-items: center;
+  }
+
+  .ProfileComp img {
+    width: 80vw; /* ✅ Increase image size */
+    grid-row: 1; /* ✅ Moves image on top */
+  }
 }

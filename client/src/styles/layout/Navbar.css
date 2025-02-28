@@ -1,36 +1,120 @@
 .Navbar {
   width: 100vw;
+  height: 70px;
+  position: fixed; /* ✅ Keeps it at the top */
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* ✅ Ensures it stays above other content */
+  padding: 0 20px;
+  box-sizing: border-box;
 }
-img {
+
+/* ✅ Navigation container */
+nav {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ✅ Logo */
+.logo img {
   display: block;
   height: 50px;
+  transition: height 0.3s ease-in-out; /* ✅ Smooth resizing */
 }
 
-.logo {
-  margin: 0px 0;
-  padding: 0;
-  height: 50px;
-}
-
-nav {
-  display: flex;
-  flex-direction: row;
-  width: auto;
-  justify-content: center;
-  gap: 30px;
-}
-
+/* ✅ Navbar Links */
 ul {
   list-style-type: none;
   display: flex;
   flex-direction: row;
   gap: 30px;
+  padding: 0;
+  margin: 0;
 }
 
+/* ✅ Adjust navbar links */
+ul li {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  font-weight: 900;
+  transition: font-size 0.3s ease-in-out; /* ✅ Smooth resizing */
+}
+
+/* ✅ LinkedIn Icon */
 .logo2 img {
   height: 25px;
+  transition: height 0.3s ease-in-out;
 }
 
 .logo2 {
-  margin: 16px 0;
+  margin: 0;
+}
+
+/* 📱 **Make Navbar Smaller Instead of Stacking** */
+
+@media (max-width: 768px) {
+  .Navbar {
+    height: 55px; /* ✅ Reduce navbar height */
+    padding: 0 15px;
+  }
+
+  nav {
+    max-width: 100%;
+    gap: 10px; /* ✅ Reduce space between items */
+  }
+
+  .logo img {
+    height: 40px; /* ✅ Reduce logo size */
+  }
+
+  ul {
+    gap: 15px; /* ✅ Reduce spacing between links */
+  }
+
+  a {
+    font-size: 14px; /* ✅ Reduce font size */
+  }
+
+  .logo2 img {
+    height: 20px; /* ✅ Reduce LinkedIn icon */
+  }
+}
+
+@media (max-width: 360px) {
+  .Navbar {
+    height: 45px; /* ✅ Reduce navbar height */
+    padding: 0 0px;
+  }
+
+  nav {
+    max-width: 100%;
+    gap: 7px; /* ✅ Reduce space between items */
+  }
+
+  .logo img {
+    height: 30px; /* ✅ Reduce logo size */
+  }
+
+  ul {
+    gap: 10px; /* ✅ Reduce spacing between links */
+  }
+
+  a {
+    font-size: 10px; /* ✅ Reduce font size */
+  }
+
+  .logo2 img {
+    height: 15px; /* ✅ Reduce LinkedIn icon */
+  }
 }
